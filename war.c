@@ -99,36 +99,20 @@ int main() {
 
 
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <time.h>
+    }
 
-// Quantidade de territórios, MISSÕES E TAMANHO MÁXIMO DAS STRINGS.
 
-#define TOTAL_TERRITÓRIOS 8
 
-#define TOTAL_MISSÕES 4
 
-#define MAX_STRING 40
 
-// estrutura dos territórios
 
-typedef struct {
-    char nome[MAX_STRING];  //nome do território
-    char corexercito[MAX_STRING]; //cor do exército
-    int tropas;                    //número de tropas
-    
-}Territorio;
 
-// Funções setup e gerenciamento de memória
 
-void inicializarjogo(void);
 
-void criarterritórios(int numTerritorios);
 
-void liberarterritorios (int numTerritorios);
 
-//Funções de interface com o usuário
+
+
 
 
 
