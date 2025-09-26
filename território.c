@@ -11,3 +11,8 @@ typedef struct {
     int tropas;
 } Territorio;
 
+int main() {
+    Territorio territorios[MAX_TERRITORIOS];
+
+    printf("=== Cadastro de Territorios ===\n");
+
