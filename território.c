@@ -31,4 +31,13 @@ int main() {
         scanf("%d", &territorios[i].tropas);
         getchar(); // limpar buffer do scanf
     }
+ printf("\n=== Lista de Territorios Cadastrados ===\n");
+    for (int i = 0; i < MAX_TERRITORIOS; i++) {
+        printf("\nTerritorio %d:\n", i + 1);
+        printf("Nome: %s\n", territorios[i].nome);
+        printf("Cor: %s\n", territorios[i].cor);
+        printf("Tropas: %d\n", territorios[i].tropas);
+    }
 
+    return 0;
+}
