@@ -16,3 +16,19 @@ int main() {
 
     printf("=== Cadastro de Territorios ===\n");
 
+    for (int i = 0; i < MAX_TERRITORIOS; i++) {
+        printf("\n--- Territorio %d ---\n", i + 1);
+
+        printf("Digite o nome do territorio: ");
+        fgets(territorios[i].nome, MAX_STRING, stdin);
+        territorios[i].nome[strcspn(territorios[i].nome, "\n")] = '\0'; // remover \n
+
+        printf("Digite a cor do exercito: ");
+        fgets(territorios[i].cor, MAX_STRING, stdin);
+        territorios[i].cor[strcspn(territorios[i].cor, "\n")] = '\0'; // remover \n
+
+        printf("Digite o numero de tropas: ");
+        scanf("%d", &territorios[i].tropas);
+        getchar(); // limpar buffer do scanf
+    }
+
